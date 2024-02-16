@@ -25,7 +25,8 @@ SECRET_KEY = 'myqt7=-4^me-za^4tw8$cj*(xfrd6@-+db^98z=&7vsa*q+-#e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.95.203.79',
+		 '172.31.85.84']
 
 
 # Application definition
