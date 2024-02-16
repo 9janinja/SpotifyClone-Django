@@ -12,7 +12,7 @@ class CustomUser(AbstractUser):
 
 	USERNAME_FIELD = 'email'
 
-	REQUIRED_FIELDS = []
+	REQUIRED_FIELDS = ['email']
 
 	usr_phone = models.CharField(max_length=20)
 
