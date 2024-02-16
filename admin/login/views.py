@@ -12,11 +12,11 @@ def index(request):
 
 
 def login(request):
-	username = request.POST['email']
+	username = request.POST['username']
 	password = request.POST['password']
 
 	if not re.match("^[\w\.\+\-]+\@[\w]+\.[a-z]{2,3}$", username):
-		messages.error(request, 'Enter a valid Email')
+		messages.error(request, 'Enter a Username')
 		return redirect('login')
 
 	if len(password) < 3:
